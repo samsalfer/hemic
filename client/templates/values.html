@@ -1,0 +1,40 @@
+<p>You can make all the items to checkbox or even mix them up with radio controls, Please refer the documentation for more details or dynatree documentation</p>
+
+
+<div class="table-responsive">
+  <table class="table table-hover" id="basicTable">
+    <thead>
+      <tr>
+        <!-- NOTE * : Inline Style Width For Table Cell is Required as it may differ from user to user
+      Comman Practice Followed
+      -->
+
+        <th style="width:20%">ID</th>
+        <th style="width:50%">Name</th>
+        <th style="width:30%">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="value in struc.values">
+
+          <td class="v-align-middle ">
+            <p>{{ value._id }}</p>
+          </td>
+          <td class="v-align-middle">
+            <p>{{ value.value }}</p>
+          </td>
+          <td class="v-align-middle">
+            <p><button class="btn"><i class="pg-trash"></i></button></p>
+          </td>
+      </tr>
+
+
+
+
+
+
+
+
+    </tbody>
+  </table>
+</div>

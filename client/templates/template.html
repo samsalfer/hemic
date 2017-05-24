@@ -1,0 +1,89 @@
+    <!-- START JUMBOTRON -->
+    <div class="jumbotron" data-pages="parallax">
+      <div class="container-fluid container-fixed-lg">
+        <div class="inner">
+          <!-- START BREADCRUMB -->
+          <ul class="breadcrumb">
+            <li>
+              <a href="#">UI Elements</a>
+            </li>
+            <li><a href="#" class="active">Tree View</a>
+            </li>
+          </ul>
+          <!-- END BREADCRUMB -->
+          <div class="row">
+            <div class="col-lg-7 col-md-6 ">
+              <!-- START PANEL -->
+              <div class="panel panel-transparent">
+                <div class="panel-body">
+                  <h3 class="">Gestión de terminologías</h3>
+                  <p>This is powered by jquery dynatree, most extensively used tree view plugin which is easy use and customize, for further more we have explained how to set up you tree view on pages
+                  </p>
+                  <br>
+                  <a href="http://wwwendt.de/tech/dynatree/doc/dynatree-doc.html" target="_blank" class="btn btn-complete">See Plugin</a>
+                  <p class="small hinted-text inline v-align-middle m-l-10">see the plugin for
+                    <br> http://wwwendt.de/tech/dynatree/
+                  </p>
+                </div>
+              </div>
+              <!-- END PANEL -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END JUMBOTRON -->
+    <!-- START CONTAINER FLUID -->
+    <div class="container-fluid container-fixed-lg">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">Estructura de información
+              </div>
+            </div>
+            <div class="panel-body">
+              <li id="id4" ng-repeat="structure in struc.data">
+                  <a ng-href="#!/home/values/{{ structure._id }}">{{ structure.name }}</a>
+
+              </li>
+              <div id="default-tree" class="m-b-20">
+                <ul id="treeData" class="hidden">
+                  <li>
+                      <a ng-href="#!/home/values/{{ structure._id }}">hola1</a>
+
+                  </li>
+                  <li >
+                      <a ng-href="#!/home/values/{{ structure._id }}">hola1</a>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <div class="panel-title">Conjunto de valores
+              </div>
+            </div>
+            <div class="panel-body">
+                <div ui-view name="home-values"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- END CONTAINER FLUID -->
+  <!-- END PAGE CONTENT -->
+  <!-- START COPYRIGHT -->
+  <!-- START CONTAINER FLUID -->
+
+
+<script src="assets/plugins/jquery-dynatree/jquery.dynatree.min.js" type="text/javascript"></script>
+<!-- END VENDOR JS -->
+<script src="assets/js/tree_view.js" type="text/javascript"></script>
+<script src="assets/js/scripts.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL JS -->
